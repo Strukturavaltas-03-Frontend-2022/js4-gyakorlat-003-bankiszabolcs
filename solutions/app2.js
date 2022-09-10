@@ -18,12 +18,13 @@
  * @returns {[{}, {}]} objektumok tömbjével tér vissza
  */
 const getUsers = async (url = '') => {
-    
+    const result = fetch(url).then(data=>data.json())
+   return result
 };
 
 /**
  * TODO: exportáld ki helyesen a getUsers függvényt!
  */
 export {
-    
+    getUsers
 }
